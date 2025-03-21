@@ -75,7 +75,7 @@ export async function POST (request:Request){
         console.log('Error registering user',error);
         return Response.json(
             {
-                success:true,
+                success:false,
                 message:'Error registering user'
             },
             {status:500}

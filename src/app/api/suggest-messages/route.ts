@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 export async function POST() {
   const apiKey=process.env.GEMINI_API_KEY as string;
 
-  const prompt ='Give me some ramdom comments asking queries. The question should be friendly and interactive'
+  const prompt ='Give me some random comments asking queries. The question should be friendly and interactive'
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
